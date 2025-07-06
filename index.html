@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Talha Bilici – Junior C# Developer</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            body {
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+
+            .hero {
+                padding: 5rem 1rem;
+            }
+
+            .section-title {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .project-card {
+                background-color: #1f1f1f;
+                border: none;
+            }
+
+            footer {
+                padding: 1.5rem 0;
+                background-color: #181818;
+            }
+
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                font-size: 0.9rem;
+            }
+
+            .emoji {
+                font-size: 1.2rem;
+                margin-right: 0.4rem;
+            }
+
+            .card-title {
+                display: flex;
+                align-items: center;
+            }
+
+            .navbar {
+                padding-top: 1.25rem;
+                padding-bottom: 1.25rem;
+            }
+
+            .skills-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+
+            .skill-badge {
+                background-color: #2a2a2a;
+                color: #e0e0e0;
+                border-radius: 20px;
+                padding: 0.4rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            .hero-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+
+            .hero-text {
+                flex: 1;
+            }
+
+            .hero-image {
+                flex: 0 0 auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Talha Bilici</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero bg-dark text-light">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 class="display-4 fw-bold">Hi, I'm Talha Bilici</h1>
+                    <p class="lead">A junior C# developer focused on building clean, efficient, and user-friendly software.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://avatars.githubusercontent.com/u/150885323?v=4" alt="Profile Picture" class="rounded-circle" width="160">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <h2 class="section-title">🧑‍💻 About Me</h2>
+            <p>Hello! I'm a junior C# developer who enjoys learning by creating. I focus on building tools, small web applications, and games with modern, maintainable code. My goal is to write software that is both reliable and enjoyable to use.</p>
+            <p>I'm especially drawn to game jams for their creative energy and rapid prototyping. I’ve used C# in Unity and also built a small console-based text adventure in .NET, and I'm continually expanding my backend development skills through personal projects.</p>
+            <p>I value simplicity, thoughtful design, and purposeful coding – whether I’m working on the backend or crafting an intuitive UI.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container">
+            <h2 class="section-title">🛠 Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="emoji">📂</span>GitHub Projects</h5>
+                            <p class="card-text">My GitHub hosts a variety of personal and experimental projects – from tools and web apps to game prototypes and learning exercises. I actively use it to track my growth and showcase my interests as a developer.</p>
+                            <a href="https://github.com/vaemnor" class="btn btn-outline-light" target="_blank">View GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="emoji">🎮</span>Games on itch.io</h5>
+                            <p class="card-text">My itch.io page features games and prototypes built during jams and academic projects. Most are made with Unity, and they represent my interest in gameplay design, visual polish, and creative storytelling.</p>
+                            <a href="https://vaemnor.itch.io" class="btn btn-outline-light" target="_blank">Visit itch.io</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container">
+            <h2 class="section-title">🧰 Skills & Tools</h2>
+            <p class="text-center">Technologies and tools I’m familiar with. I enjoy learning new frameworks by applying them in real projects.</p>
+            <div class="skills-list">
+                <span class="skill-badge">C#</span>
+                <span class="skill-badge">.NET</span>
+                <span class="skill-badge">Unity</span>
+                <span class="skill-badge">PHP</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Laravel</span>
+                <span class="skill-badge">Bootstrap</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">GitHub</span>
+                <span class="skill-badge">Visual Studio</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2 class="section-title">📬 Contact</h2>
+            <p>If you're looking for a junior developer to join your team or collaborate on a project, feel free to reach out. I'm always open to new opportunities and conversations about clean code and creative development.</p>
+            <p>Send me an <a href="mailto:bilicit2002@outlook.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/talha-b-90106228a" target="_blank">LinkedIn</a>. 🤝</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <span>&copy; 2025 Talha Bilici. All rights reserved.</span>
+                    <span>Made with ♡ using Bootstrap 5.</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
